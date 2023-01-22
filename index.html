@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="w3.css">
+    <title>Macam Macam Game</title>
+</head>
+
+<body style="min-height: 1000px;">
+    <div class="container w3-white w3-card-4">
+        <img src="asset/gambarBackground.jpg" alt="Gambar Backgorund Hitam" style="width: 100%; height: 350px;">
+    </div>
+    <div class="container w3-purple">
+        <center>
+            <h1 style="color: rgb(255, 0, 208);">Contoh Beberapa Game</h1>
+        </center>
+    </div>
+    <div class="w3-bar w3-cyan">
+        <button class="w3-bar-item w3-button" onclick="tujuanKota('home')">Home</button>
+        <button class="w3-bar-item w3-button" onclick="tujuanKota('profile')">Profile</button>
+        <button class="w3-bar-item w3-button" onclick="tujuanKota('game1')">Genshin Impact</button>
+        <button class="w3-bar-item w3-button" onclick="tujuanKota('game2')">Valorant</button>
+        <button class="w3-bar-item w3-button" onclick="tujuanKota('game3')">Forza Horizon 5</button>
+        <button class="w3-bar-item w3-button" onclick="tujuanKota('game4')">DOTA 2</button>
+    </div>
+    <div id="home" class="w3-container kota" style="display: block;">
+        <center>
+            <h1>Welcome</h1>
+        </center>
+    </div>
+    <div id="profile" class="w3-container kota w3-animate-bottom" style="display: none;">
+        <center>
+            <img src="asset/profil.jpg" alt="foto saya" style="width: 150px; margin-top: 20px;">
+            <p>
+            <h2>Nama : Rizky Maryadi</h2>
+            <h2>Nim : 10122129</h2>
+            <h2>Kelas : IF 4</h2>
+            </p>
+        </center>
+    </div>
+    <div id="game1" class="w3-container kota w3-animate-bottom" style="display: none;">
+        <center>
+            <img src="asset/genshin.jpg" alt="Genshin Impact" style="width: 250px; margin-top: 20px;">
+            <p>permainan video yang dikembangkan dan diterbitkan oleh MiHoYo. Permainan ini dirilis pada tanggal 28 September 2020 di Android, iOS, Windows, dan PlayStation 4, serta 28 April 2021 di platform PlayStation 5
+                Genshin Impact juga memiliki alur cerita yang menarik dan para player biasanya menyebutnya dengan nama Lore Genshin Impact.</p>
+        </center>
+    </div>
+    <div id="game2" class="w3-container kota w3-animate-bottom" style="display: none;">
+        <center>
+            <img src="asset/valo.jpg" alt="Valorant" style="width: 250px; margin-top: 20px;">
+            <p>permainan video POP (penembak orang pertama) taktis multipemain gratis yang dikembangkan dan diterbitkan oleh Riot Games, untuk Microsoft Windows. Pertama kali menggoda dengan nama kode Project A pada Oktober 2019, permainan memulai periode beta tertutup dengan akses terbatas pada 7 April 2020, diikuti dengan perilisan resmi pada 2 Juni 2020. Pengembangan permainan dimulai pada 2014.</p>
+        </center>
+    </div>
+    <div id="game3" class="w3-container kota w3-animate-bottom" style="display: none;">
+        <center>
+            <img src="asset/forza.jpg" alt="Forza Horizon 5">
+            <p>Forza Horizon 5 adalah gim video balap 2021 yang dikembangkan oleh Playground Games dan diterbitkan oleh Xbox Game Studios. Ini adalah judul Forza Horizon kelima dan angsuran utama kedua belas dalam seri Forza. Gim ini diatur dalam representasi fiksi Meksiko</p>
+        </center>
+    </div>
+    <div id="game4" class="w3-container kota w3-animate-bottom" style="display: none;">
+        <center>
+            <img src="asset/dota2.jpg" alt="dota2">
+            <p>sebuah permainan arena pertarungan daring multipemain, dan merupakan sekuel dari Defense of the Ancients mod pada Warcraft 3: Reign of Chaos dan Warcraft 3: The Frozen Throne. DotA 2 dikembangkan oleh Valve Corporation, terbit juli 2013 dota 2 dapat dimainkan secara gratis pada sistem operasi Microsoft Windows, OS X and Linux. Dota 2 dapat dimainkan secara eksklusif melalui distributor resmi valve, Steam.</p>
+        </center>
+</body>
+<script>
+    function tujuanKota(namakota) {
+        var i;
+        var x = document.getElementsByClassName('kota')
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        document.getElementById(namakota).style.display = 'block';
+    }
+</script>
+
+</html>
